@@ -1,0 +1,5 @@
+-keep class com.getcapacitor.** { *; }
+-keep @com.getcapacitor.annotation.CapacitorPlugin class * { *; }
+-keep class com.google.firebase.** { *; }
+-keep class io.farmersconnect.app.** { *; }
+-keepattributes *Annotation*

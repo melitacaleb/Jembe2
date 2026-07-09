@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Farmers Connect</title>
+<meta name="description" content="Farmers Connect — social network, marketplace and education hub for farmers." />
+<meta name="theme-color" content="#0d0d0d" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- Capacitor runtime — injected automatically when running as APK. No-op in browser. -->
+<script>
+  // Detect Capacitor early so native.js can initialize correctly
+  window.__CAPACITOR_APP__ = (typeof Capacitor !== 'undefined' && Capacitor.isNativePlatform && Capacitor.isNativePlatform());
+</script>
+</head>
+<body>
+  <!-- Offline banner — shown by service worker / network detection -->
+  <div class="offline-banner" id="offlineBanner" style="display:none">
+    📡 You're offline — showing cached content
+  </div>
+
+  <!-- Sidebar navigation (collapsible) -->
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <!-- Main app mount point -->
+  <main id="app" class="app-root"></main>
+
+  <!-- Capacitor script — only present in APK build -->
+  <script src="capacitor.js" onerror=""></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

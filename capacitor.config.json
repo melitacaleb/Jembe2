@@ -1,0 +1,39 @@
+{
+  "appId": "io.farmersconnect.app",
+  "appName": "Farmers Connect",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false,
+    "errorPathOrUrl": "/index.html"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false,
+    "loggingBehavior": "none",
+    "initialFocus": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2500,
+      "launchAutoHide": true,
+      "backgroundColor": "#0d0d0d",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true,
+      "layoutName": "launch_screen",
+      "useDialog": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#0d0d0d",
+      "overlaysWebView": false
+    },
+    "Preferences": {
+      "group": "FarmersConnectStorage"
+    }
+  }
+}
